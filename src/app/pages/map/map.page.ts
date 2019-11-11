@@ -25,7 +25,8 @@ export class MapPage implements OnInit, AfterViewInit {
   }
 
   ngAfterViewInit(): void {
-    mapboxgl.accessToken = 'pk.eyJ1IjoiYWN4ZWwiLCJhIjoiY2p4ZGtrM3gyMDEyYzN6b2UydWw2NzQ1bCJ9.IMpt98bhYc0Su5UC7jX8hQ';
+    // Access Token
+    mapboxgl.accessToken = '';
     const map = new mapboxgl.Map({
       style    : 'mapbox://styles/mapbox/light-v10',
       center   : [this.lng, this.lat],
