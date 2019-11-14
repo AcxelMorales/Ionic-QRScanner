@@ -13,7 +13,7 @@ export class Tab2Page {
   constructor(public _dataLocalService: DataLocalService) {}
 
   sendEmail(): void {
-
+    this._dataLocalService.sendEmail();
   }
 
   openRegistry(registry: Registry): void {
